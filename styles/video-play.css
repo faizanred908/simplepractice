@@ -20,6 +20,7 @@ body {
   column-gap: 24px;
   padding: 24px 80px;
   max-width: 1750px;
+  width: min(100%, 1750px);
   margin: 0 auto;
 }
 
@@ -240,7 +241,7 @@ body {
 @media (max-width: 1000px) {
   .video-playing-container {
     grid-template-columns: 1fr;
-    padding: 12px;
+    padding: 13px;
   }
   .video-placeholder {
     border-radius: 0;
@@ -248,8 +249,18 @@ body {
   .video-info-section,
   .video-column {
     padding: 0;
+    min-width: 0;
   }
   .video-column {
     margin-top: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-video-details {
+    padding: 0 12px;
+  }
+  .video-playing-container {
+    padding: 0 5px;
   }
 }

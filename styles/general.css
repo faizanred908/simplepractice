@@ -22,6 +22,7 @@ body {
 @media (min-width: 1210.1px) {
   body {
     padding-left: 243px;
+    padding-right: 24px;
   }
 }
 
